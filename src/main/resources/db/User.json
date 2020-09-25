@@ -1,0 +1,30 @@
+[{
+  "_id": {
+    "$oid": "5f3a738cd75d101dc41d13a0"
+  },
+  "id": 1,
+  "username": "admin",
+  "password": "bd1718f058d8a02468134432b8656a86",
+  "salt": "YzcmCZNvbXocrsz9dm8e",
+  "role": 1,
+  "nickname": "管理员"
+},{
+  "_id": {
+    "$oid": "5f3dceb23c01742b2475f99a"
+  },
+  "id": 2,
+  "username": "guest",
+  "password": "",
+  "salt": "",
+  "role": 3,
+  "nickname": "游客"
+},{
+  "_id": {
+    "$oid": "5f3dd492ca0bfb3ddf7b3f63"
+  },
+  "password": "25f8131146dd9215b4a188dfd65f6a7d",
+  "role": 2,
+  "username": "qwe123",
+  "nickname": "qwe123",
+  "salt": "5a7d5ffe800740aca73b"
+}]
