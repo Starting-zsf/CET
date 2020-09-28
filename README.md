@@ -1,37 +1,26 @@
 # CETEvaluation
 
-#### 介绍
-CET程序评估（后端）
+#### CET程序评估后端项目地址
+https://gitee.com/stating/cetevaluation
 
-#### 软件架构
-软件架构说明
+#### CET程序评估前端项目地址
+https://gitee.com/stating/cetevaluation-web
 
+## Mongodb
+### Mongodb启动
+```
+mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log  --bind_ip=120.95.133.8 --port=27017 --fork
+```
 
-#### 安装教程
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 参与贡献
-
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+### Mongodb 连接
+```
+mongodb://120.95.133.8:27017/?compressors=zlib&readPreference=primary&gssapiServiceName=mongodb&appname=MongoDB%20Compass&ssl=false
+```
 
 
-#### 特技
+## 使用说明
+### 1. 先导入数据库脚本
+在`./db/`中，分别导入即可
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 2. 导入pom.xml中的包
+然后运行即可,默认后端端口号8083
