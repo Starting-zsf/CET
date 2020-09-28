@@ -1,36 +1,26 @@
 # CETEvaluation
 
-#### Description
-CET程序评估（后端）
+#### CET程序评估后端项目地址
+https://gitee.com/stating/cetevaluation
 
-#### Software Architecture
-Software architecture description
+#### CET程序评估前端项目地址
+https://gitee.com/stating/cetevaluation-web
 
-#### Installation
+## Mongodb
+### Mongodb启动
+```
+mongod --dbpath /var/lib/mongo --logpath /var/log/mongodb/mongod.log  --bind_ip=120.95.133.8 --port=27017 --fork
+```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Instructions
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### Contribution
-
-1.  Fork the repository
-2.  Create Feat_xxx branch
-3.  Commit your code
-4.  Create Pull Request
+### Mongodb 连接
+```
+mongodb://120.95.133.8:27017/?compressors=zlib&readPreference=primary&gssapiServiceName=mongodb&appname=MongoDB%20Compass&ssl=false
+```
 
 
-#### Gitee Feature
+## 使用说明
+### 1. 先导入数据库脚本
+在`./db/`中，分别导入即可
 
-1.  You can use Readme\_XXX.md to support different languages, such as Readme\_en.md, Readme\_zh.md
-2.  Gitee blog [blog.gitee.com](https://blog.gitee.com)
-3.  Explore open source project [https://gitee.com/explore](https://gitee.com/explore)
-4.  The most valuable open source project [GVP](https://gitee.com/gvp)
-5.  The manual of Gitee [https://gitee.com/help](https://gitee.com/help)
-6.  The most popular members  [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+### 2. 导入pom.xml中的包
+然后运行即可,默认后端端口号8083
